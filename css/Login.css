@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:
+    linear-gradient(
+        180deg,
+        #00b7ff 0%,
+        #008cff 35%,
+        #003cff 70%,
+        #1600c9 100%
+    );
+    position:relative;
+}
+/* login */
+
+.inicio_Sesion{
+    width:400px;
+    padding:45px;
+    background:rgba(5,15,80,0.92);
+    backdrop-filter:blur(8px);
+    border:2px solid rgba(255,255,255,0.15);
+    box-shadow:
+    0 0 25px rgba(0,0,0,.4),
+    0 0 15px rgba(0,183,255,.4);
+    position:relative;
+    z-index:10;
+}
+
+/* linea azul arriba */
+
+.inicio_Sesion::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:#00b7ff;
+}
+
+h1{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:35px;
+}
+
+/* inputs */
+
+.datos{
+    margin-bottom:22px;
+}
+
+.datos input{
+    width:100%;
+    padding:15px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    outline:none;
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.datos input::placeholder{
+    color:#b9dfff;
+}
+
+.datos input:focus{
+    border:1px solid #00b7ff;
+    box-shadow:0 0 10px rgba(0,183,255,.5);
+}
+
+/* opciones */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    font-size:13px;
+    color:white;
+}
+
+.options a{
+    color:#7ed7ff;
+    text-decoration:none;
+}
+
+/* boton */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:linear-gradient(
+        90deg,
+        #008cff,
+        #00b7ff
+    );
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.02);
+    box-shadow:0 0 15px rgba(0,183,255,.6);
+}
+
+/* abajo */
+
+.signup{
+    text-align:center;
+    margin-top:25px;
+    color:#cbefff;
+    font-size:14px;
+}
+
+.signup a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}

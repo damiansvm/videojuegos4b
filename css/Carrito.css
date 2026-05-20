@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial, sans-serif;
+}
+
+.producto{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    gap:30px;
+}
+
+
+
+.info{
+    flex:1;
+}
+
+.info h1{
+    font-size:36px;
+    line-height:1;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.stock{
+    color:#777;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.stock span{
+    color:#ff4d4d;
+    margin-left:10px;
+}
+
+.descripcion{
+    color:#ddd;
+    font-size:15px;
+    margin-bottom:20px;
+    line-height:1.5;
+}
+
+.compartir{
+    color:#1e90ff;
+    text-decoration:none;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #444;
+    margin:25px 0;
+}
+
+.precio{
+    font-size:64px;
+    color:#1e90ff;
+    margin-bottom:10px;
+}
+
+.envio{
+    color:#666;
+    font-size:14px;
+}
+
+.compra{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.compra label{
+    color:#777;
+    font-weight:bold;
+}
+
+.compra input{
+    width:70px;
+    height:40px;
+    background:#000;
+    color:#fff;
+    border:1px solid #777;
+    text-align:center;
+    font-size:18px;
+}
+
+.compra button{
+    background:#bdbdbd;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    font-weight:bold;
+    cursor:pointer;
+}
